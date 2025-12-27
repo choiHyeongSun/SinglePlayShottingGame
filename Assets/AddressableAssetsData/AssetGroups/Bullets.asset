@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Bullets
+  m_EditorClassIdentifier: 
+  m_GroupName: Bullets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 61535ba4ed3ee524c9f2ea755af9204f
+  m_SerializeEntries:
+  - m_GUID: 2d25292992fee494c8d8e50853128240
+    m_Address: Assets/Assets/Prefab/PistolBullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a07d61842dbd254c95571de9e10f355
+    m_Address: Assets/Assets/Prefab/ShutgunBullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cde5747ec2ebf304394208e23eb8dd6e
+    m_Address: Assets/Assets/Prefab/Bullets/GrenadeProjectile.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f570d30a3afc54a458c40cc741d53780
+    m_Address: Assets/Assets/Prefab/Bullets/MolotovProjectile.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f57ac5a6a1d5f2a4fbe88928be8887c8
+    m_Address: Assets/Assets/Prefab/SniperBullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa0f6203861f7ff42b9b051e6acd9047
+    m_Address: Assets/Assets/Prefab/Bullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 37758859c25600747b3392a9533ad954, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b1285b37345b89142bde98d45a082d63, type: 2}
+    - {fileID: 11400000, guid: 987269c470d72824e966a6ca5f0c32e6, type: 2}

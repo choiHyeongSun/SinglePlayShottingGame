@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: WeaponItems
+  m_EditorClassIdentifier: 
+  m_GroupName: WeaponItems
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cb1c8e3b9ae92eb4291a01e43ccd36b9
+  m_SerializeEntries:
+  - m_GUID: 01ef7bdfebc4ac84f8b14913d8f98a23
+    m_Address: Assets/Assets/Prefab/Items/RifleItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Items
+    - Rifle
+    - WeaponItems
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0222fb359476f6048af50455c21fb7f6
+    m_Address: Assets/Assets/Prefab/Items/ShotgunItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Items
+    - Shotgun
+    - WeaponItems
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ed1184c597827942adea6acd82447ef
+    m_Address: Assets/Assets/Prefab/Items/PistolItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Items
+    - Pistol
+    - WeaponItems
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dde4d0fbed53445409fefd0065c9fe40
+    m_Address: Assets/Assets/Prefab/Items/SniperRifleItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Items
+    - Sniper
+    - WeaponItems
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 37758859c25600747b3392a9533ad954, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 46f0ce268a614584eb7111d6a0319e66, type: 2}
+    - {fileID: 11400000, guid: 3156c46b8bbaca24690975b8904a1234, type: 2}

@@ -7,10 +7,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerTargetingController : MonoBehaviour
 {
+    [SerializeField] private LayerMask pickingMask;
+    [SerializeField] private float rotSpeed;
     private Player player;
     private Vector2 mousePosition;
     public Vector3 pickingPosition { get; private set; }
-    
 
     private void Awake()
     {
@@ -37,16 +38,22 @@ public class PlayerTargetingController : MonoBehaviour
 
     private void LookatToPickingPos()
     {
+        if (!player.playerStateController.canTurn)
+        {
+            return;
+        }
+
         Vector3 direction = pickingPosition - transform.position;
-        direction.y = 0;
-        Vector3 lookAtPos = transform.position + direction;
-        transform.LookAt(lookAtPos);
+        direction = new Vector3(direction.x, 0.0f, direction.z).normalized;
+
+        Quaternion resultRot = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, resultRot, rotSpeed * Time.deltaTime);
     }
 
     private void Picking()
     {
         Ray ray = Camera.main.ScreenPointToRay(mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo))
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, float.PositiveInfinity, pickingMask))
         {
             pickingPosition = hitInfo.point;
         }

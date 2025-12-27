@@ -16,32 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 8482ae64232cf98499cf80d28085a5bb
-  m_SerializeEntries:
-  - m_GUID: 2e16db4b418b5a84294daab281cb2145
-    m_Address: Assets/Assets/VFX/FX_muzzle_fire_01.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8a07d61842dbd254c95571de9e10f355
-    m_Address: Assets/Assets/Prefab/ShutgunBullet.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: de15954b8eb16f246b5d39736772835d
-    m_Address: Assets/Assets/VFX/FX_muzzle_fire_03.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f57ac5a6a1d5f2a4fbe88928be8887c8
-    m_Address: Assets/Assets/Prefab/SniperBullet.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fa0f6203861f7ff42b9b051e6acd9047
-    m_Address: Assets/Assets/Prefab/Bullet.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 37758859c25600747b3392a9533ad954, type: 2}
   m_SchemaSet:

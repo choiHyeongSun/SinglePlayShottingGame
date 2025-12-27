@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ConsumableItems
+  m_EditorClassIdentifier: 
+  m_GroupName: ConsumableItems
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 21a154deecd07d24cbf3d0e2664e0fd2
+  m_SerializeEntries:
+  - m_GUID: 3ffe7e0bf41bc2a449e684fe77cff280
+    m_Address: Assets/Assets/Prefab/Items/HealthPotion.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Consumable
+    - ConsumableItems
+    - Items
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 570464cb1b275044285f9815a25a7273
+    m_Address: Assets/Assets/Prefab/ConsumableObjects/Molotov.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Consumable
+    - ConsumableItems
+    - Items
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 681d083232f12d846a0f2672e2a79c5d
+    m_Address: Assets/Assets/Prefab/Items/ManaPotion.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Consumable
+    - ConsumableItems
+    - Items
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6fc5df51876da0a43baa6a4eb77a4ff3
+    m_Address: Assets/Assets/Prefab/Items/Grenade.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Consumable
+    - ConsumableItems
+    - Items
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 37758859c25600747b3392a9533ad954, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8a13d69ca5529fb4db9c894a2320ddc5, type: 2}
+    - {fileID: 11400000, guid: 975555ae6de4ab449910a03ec2718fc6, type: 2}

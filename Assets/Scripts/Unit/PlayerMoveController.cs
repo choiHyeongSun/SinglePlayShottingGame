@@ -7,11 +7,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerMoveController : MonoBehaviour
 {
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float rollingSpeed;
+
     private CharacterController characterController { get; set; }
     private Player player;
-    private bool isMove = true;
     private Vector2 moveInput;
-    [field: SerializeField] private float moveSpeed { get; set; }
+    private Vector2 moveVelocity;
+    public Vector3 moveDirection { get; private set; } 
+
     private void Awake()
     {
         player = GetComponent<Player>();
@@ -27,30 +31,29 @@ public class PlayerMoveController : MonoBehaviour
 
     private void OnMove(InputAction.CallbackContext context)
     {
-        isMove = true;
         moveInput = context.ReadValue<Vector2>();
     }
 
     private void OnMoveCancel(InputAction.CallbackContext context)
     {
-        isMove = false;
         moveInput = Vector2.zero;
     }
 
     private void Update()
     {
+
+        UpdateMoveDirection();
         Move();
+        RollingMove();
     }
 
-    private void Move()
+    private void UpdateMoveDirection()
     {
-
-
-        player.animator.SetFloat("AxisX", moveInput.x, 0.25f ,Time.deltaTime);
-        player.animator.SetFloat("AxisZ", moveInput.y, 0.25f, Time.deltaTime);
-
-        if (!isMove) return;
-
+        if (!player.playerStateController.canMove)
+        {
+            return;
+        }
+        
         Transform cameraTrans = Camera.main.transform;
 
         Vector3 cameraForwardToVector2 = cameraTrans.forward;
@@ -61,13 +64,37 @@ public class PlayerMoveController : MonoBehaviour
         cameraForwardToVector2 = cameraForwardToVector2.normalized;
         cameraRightdToVector2 = cameraRightdToVector2.normalized;
 
-
-
         Vector3 dirForward = cameraForwardToVector2 * moveInput.y;
         Vector3 dirRight = cameraRightdToVector2 * moveInput.x;
 
-        Vector3 dir = Vector3.Normalize(dirForward + dirRight) * moveSpeed * Time.deltaTime;
-        characterController.Move(dir);
+        moveDirection = Vector3.Normalize(dirForward + dirRight);
+    }
 
+    private void Move()
+    {
+        if (!player.playerStateController.canMove)
+        {
+            return;
+        }
+
+        moveVelocity.x = Vector3.Dot(moveDirection, transform.right);
+        moveVelocity.y = Vector3.Dot(moveDirection, transform.forward);
+
+        player.animator.SetFloat("AxisX", moveVelocity.x, 0.1f, Time.deltaTime);
+        player.animator.SetFloat("AxisZ", moveVelocity.y, 0.1f, Time.deltaTime);
+
+        Vector3 dir = moveDirection * moveSpeed * Time.deltaTime;
+        characterController.Move(dir);
+    }
+
+    private void RollingMove()
+    {
+        if (!player.playerRollingController.isRolling)
+        {
+            return;
+        }
+
+        Vector3 dir = moveDirection * rollingSpeed * Time.deltaTime;
+        characterController.Move(dir);
     }
 }

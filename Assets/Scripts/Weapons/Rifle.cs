@@ -1,23 +1,33 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class Rifle : GunBase
 {
     [SerializeField] private AssetReference muzzleParticle;
 
     protected bool isFiring;
+    private float currentFireDelay;
     private ObjectPoolingManager poolManager;
     private Coroutine fireCoroutine;
-    Animator animator;
-    
+    private Animator animator;
+    private PlayerStateController playerStateController;
     protected override void Awake()
     {
         base.Awake();
         poolManager = FindFirstObjectByType<ObjectPoolingManager>();
         poolManager.RegisterPooling(bulletRef);
         poolManager.RegisterPooling(muzzleParticle);
+        currentFireDelay = Time.time - fireDelay;
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        isFiring = false;
     }
 
     public override void Fire() 
@@ -25,7 +35,6 @@ public class Rifle : GunBase
         isFiring = true;
         ProcessReload();
         fireCoroutine = StartCoroutine(FireDelay());
-
     }
     public override void FireCanceled()
     {
@@ -41,46 +50,34 @@ public class Rifle : GunBase
     {
         this.owner = owner;
         animator = owner.GetComponent<Animator>();
+        playerStateController = owner.GetComponent<PlayerStateController>();
+
         if (animator != null)
         {
-            int upperBody = animator.GetLayerIndex("UpperBody");
+            int upperBody = animator.GetLayerIndex("UpperBody_Gun");
             animator.SetLayerWeight(upperBody, 1.0f);
         }
-        OnRigPosition(1.0f);
+        OnRigWeightAndPos(1.0f);
         OnRigEulerAngle(rigPosition, rigEulerAngle);
         animator.SetInteger("WeaponType", (int)weaponType);
     }
-
-    public override void Unequip()
-    {
-        if (animator != null)
-        {
-            int upperBody = animator.GetLayerIndex("UpperBody");
-            animator.SetLayerWeight(upperBody, 0.0f);
-        }
-        
-        StopAllCoroutines();
-        FireCanceled();
-        OnRigPosition(0.0f);
-
-        isReloading = false;
-        owner = null;
-        animator = null;
-
-    }   
 
     private IEnumerator FireDelay()
     {
         while (isFiring)
         {
             animator.SetBool("Fire_Bool", false);
-
             if (currentMagazine <= 0 || isReloading)
             {
                 yield return null;
                 continue;
             }
-
+            if (!playerStateController.canFire || currentFireDelay > Time.time)
+            {
+                yield return null;
+                continue;
+            }
+            currentFireDelay = Time.time + fireDelay;
             animator.SetBool("Fire_Bool", true);
 
             CreateParticle();
@@ -131,5 +128,4 @@ public class Rifle : GunBase
             }
         }
     }
-
 }

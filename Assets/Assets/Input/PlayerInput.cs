@@ -127,6 +127,33 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OnItemPickup"",
+                    ""type"": ""Button"",
+                    ""id"": ""d90b8c13-6318-4759-84cf-7328b91c6601"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OnRolling"",
+                    ""type"": ""Button"",
+                    ""id"": ""0e2dd184-5dc1-42bf-aaa3-0dbeab582e7a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OnNumberKey"",
+                    ""type"": ""Button"",
+                    ""id"": ""911ce105-9da1-4793-ba38-0437e580a648"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -217,6 +244,127 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""OnReload"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""05dbeae9-4e2e-42c8-a63a-e55ce07475ce"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnItemPickup"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aee0d684-706f-4c6e-9ded-e5cc6e2f76cb"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnRolling"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c916c934-f325-4c67-b8dc-07fd94a21e7a"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""79104bc1-b663-4e57-b02b-c6e7abcfc948"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e52c5876-0a39-443f-9366-df484ca78a2c"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""613ec34b-b965-4e1b-813f-d5de52e83442"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""73b53035-f594-4eb3-bc86-57f6fb92d1db"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ead349d4-24ca-4f08-80db-77d3013a988d"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""44c4eb64-bba4-42aa-9086-7452ed8f75be"",
+                    ""path"": ""<Keyboard>/7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7ee23003-96d9-4080-8bea-55bc9ba8739e"",
+                    ""path"": ""<Keyboard>/8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""79eafb55-0992-40b0-9014-86ab93501454"",
+                    ""path"": ""<Keyboard>/9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OnNumberKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -229,6 +377,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Player_OnFire = m_Player.FindAction("OnFire", throwIfNotFound: true);
         m_Player_OnMouse = m_Player.FindAction("OnMouse", throwIfNotFound: true);
         m_Player_OnReload = m_Player.FindAction("OnReload", throwIfNotFound: true);
+        m_Player_OnItemPickup = m_Player.FindAction("OnItemPickup", throwIfNotFound: true);
+        m_Player_OnRolling = m_Player.FindAction("OnRolling", throwIfNotFound: true);
+        m_Player_OnNumberKey = m_Player.FindAction("OnNumberKey", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
@@ -313,6 +464,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_OnFire;
     private readonly InputAction m_Player_OnMouse;
     private readonly InputAction m_Player_OnReload;
+    private readonly InputAction m_Player_OnItemPickup;
+    private readonly InputAction m_Player_OnRolling;
+    private readonly InputAction m_Player_OnNumberKey;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -340,6 +494,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/OnReload".
         /// </summary>
         public InputAction @OnReload => m_Wrapper.m_Player_OnReload;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/OnItemPickup".
+        /// </summary>
+        public InputAction @OnItemPickup => m_Wrapper.m_Player_OnItemPickup;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/OnRolling".
+        /// </summary>
+        public InputAction @OnRolling => m_Wrapper.m_Player_OnRolling;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/OnNumberKey".
+        /// </summary>
+        public InputAction @OnNumberKey => m_Wrapper.m_Player_OnNumberKey;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -378,6 +544,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @OnReload.started += instance.OnOnReload;
             @OnReload.performed += instance.OnOnReload;
             @OnReload.canceled += instance.OnOnReload;
+            @OnItemPickup.started += instance.OnOnItemPickup;
+            @OnItemPickup.performed += instance.OnOnItemPickup;
+            @OnItemPickup.canceled += instance.OnOnItemPickup;
+            @OnRolling.started += instance.OnOnRolling;
+            @OnRolling.performed += instance.OnOnRolling;
+            @OnRolling.canceled += instance.OnOnRolling;
+            @OnNumberKey.started += instance.OnOnNumberKey;
+            @OnNumberKey.performed += instance.OnOnNumberKey;
+            @OnNumberKey.canceled += instance.OnOnNumberKey;
         }
 
         /// <summary>
@@ -401,6 +576,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @OnReload.started -= instance.OnOnReload;
             @OnReload.performed -= instance.OnOnReload;
             @OnReload.canceled -= instance.OnOnReload;
+            @OnItemPickup.started -= instance.OnOnItemPickup;
+            @OnItemPickup.performed -= instance.OnOnItemPickup;
+            @OnItemPickup.canceled -= instance.OnOnItemPickup;
+            @OnRolling.started -= instance.OnOnRolling;
+            @OnRolling.performed -= instance.OnOnRolling;
+            @OnRolling.canceled -= instance.OnOnRolling;
+            @OnNumberKey.started -= instance.OnOnNumberKey;
+            @OnNumberKey.performed -= instance.OnOnNumberKey;
+            @OnNumberKey.canceled -= instance.OnOnNumberKey;
         }
 
         /// <summary>
@@ -469,5 +653,26 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnOnReload(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "OnItemPickup" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnOnItemPickup(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "OnRolling" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnOnRolling(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "OnNumberKey" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnOnNumberKey(InputAction.CallbackContext context);
     }
 }

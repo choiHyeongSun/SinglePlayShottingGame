@@ -10,7 +10,6 @@ public class LookAtTarget : MonoBehaviour
     {
         player = FindFirstObjectByType<Player>();
     }
-
     private void LateUpdate()
     {
         transform.position = player.playerTargetingController.pickingPosition + Vector3.up * offsetY;

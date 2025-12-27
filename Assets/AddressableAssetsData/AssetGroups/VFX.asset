@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: VFX
+  m_EditorClassIdentifier: 
+  m_GroupName: VFX
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 16449595723a81f4ea56cfde66463697
+  m_SerializeEntries:
+  - m_GUID: 2e16db4b418b5a84294daab281cb2145
+    m_Address: Assets/Assets/VFX/FX_muzzle_fire_01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c97e0f9c8277fee498d7468be84af025
+    m_Address: Assets/Assets/VFX/FX_explosion_01_a.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de15954b8eb16f246b5d39736772835d
+    m_Address: Assets/Assets/VFX/FX_muzzle_fire_03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f293a2dcc753a4a489fefe7f8f312d69
+    m_Address: Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion
+      Effects/Prefabs/WildFire.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 37758859c25600747b3392a9533ad954, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8aa00014d0771d24f9157ff7c3e38034, type: 2}
+    - {fileID: 11400000, guid: 052ee659de897a64b84982e168d0d1d4, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f75126b266408489063f8d370c2f54, type: 3}
+  m_Name: Grenade
+  m_EditorClassIdentifier: 
+  <itemType>k__BackingField: 1
+  <itemImage>k__BackingField: {fileID: 21300000, guid: cd6d689283f0fdd4da0ed90b49b8d8ec,
+    type: 3}
+  <itemName>k__BackingField: Grenade
+  <itemDescription>k__BackingField: "\uB9C8\uC6B0\uC2A4 \uBC29\uD5A5\uC73C\uB85C
+    \uD22C\uCC99\uD558\uC5EC \uC801\uC5D0\uAC8C \uD070 \uD53C\uD574\uB97C \uC785\uD799\uB2C8\uB2E4."
+  <itemAssetRef>k__BackingField:
+    m_AssetGUID: 2a6c81ab2832e284a83e6a731a43ce54
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

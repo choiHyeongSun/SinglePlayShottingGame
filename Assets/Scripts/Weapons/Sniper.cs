@@ -8,7 +8,9 @@ public class Sniper : GunBase
 
     private ObjectPoolingManager poolManager;
     private float currentFireTime;
-    Animator animator;
+    private Animator animator;
+    private PlayerStateController playerStateController;
+
     protected override void Awake()
     {
         base.Awake();
@@ -25,6 +27,12 @@ public class Sniper : GunBase
         {
             return;
         }
+
+        if (!playerStateController.canFire)
+        {
+            return;
+        }
+
         if (currentMagazine == 0)
         {
             if (!isReloading)
@@ -53,30 +61,17 @@ public class Sniper : GunBase
     {
         this.owner = owner;
         animator = owner.GetComponent<Animator>();
+        playerStateController = owner.GetComponent<PlayerStateController>();
+
         if (animator != null)
         {
-            int upperBody = animator.GetLayerIndex("UpperBody");
+            int upperBody = animator.GetLayerIndex("UpperBody_Gun");
             animator.SetLayerWeight(upperBody, 1.0f);
 
         }
-        OnRigPosition(1.0f);
+        OnRigWeightAndPos(1.0f);
         OnRigEulerAngle(rigPosition, rigEulerAngle);
         animator.SetInteger("WeaponType", (int)weaponType);
-    }
-
-    public override void Unequip()
-    {
-        if (animator != null)
-        {
-            int upperBody = animator.GetLayerIndex("UpperBody");
-            animator.SetLayerWeight(upperBody, 0.0f);
-        }
-        StopAllCoroutines();
-
-        OnRigPosition(0.0f);
-        isReloading = false;
-        owner = null;
-        animator = null;
     }
 
     private BulletBase CreateBullet()

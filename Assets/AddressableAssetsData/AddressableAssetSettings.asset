@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 8482ae64232cf98499cf80d28085a5bb
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: 1098f40d92b83dc90c40e6b72225b603
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -38,14 +38,20 @@ MonoBehaviour:
     m_Id: 
   m_RemoteCatalogLoadPath:
     m_Id: 
-  m_ContentStateBuildPathProfileVariableName: 
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
   m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
   m_GroupAssets:
+  - {fileID: 11400000, guid: fbc13caf2e13f0944b0efa5818389004, type: 2}
+  - {fileID: 11400000, guid: 5209390bdda6ef34ca5937894f028aa7, type: 2}
   - {fileID: 11400000, guid: 296e631cf3120d8408599bf789d44258, type: 2}
+  - {fileID: 11400000, guid: 386e11361e04ae94a85c7aa2beabadde, type: 2}
   - {fileID: 11400000, guid: e2f8ac15b55228f4680507c3d7dcb152, type: 2}
+  - {fileID: 11400000, guid: 21ba64bd03218d040b7b05dbbb1b44e9, type: 2}
+  - {fileID: 11400000, guid: 9b00c33c70b3ff14d8296e91f5aa9264, type: 2}
+  - {fileID: 11400000, guid: 9c32389e02d234e4ca7116c036c0ae8e, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -58,13 +64,13 @@ MonoBehaviour:
       m_ProfileName: Default
       m_Values:
       - m_Id: 6560541ace25bb246b260fc01ace36ce
-        m_Value: ServerData/[BuildTarget]
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: 8b5c54480adc5dd4b9754fcfaee77906
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: ad175e6045dddd54d848891623053480
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: ef1a20ccaeb2f774ba7bf91e1b22eb88
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: f22585593f8f69544a8fcc8c738f10df
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
     m_ProfileEntryNames:
@@ -86,7 +92,16 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
-    - default
+    - Default
+    - Weapons
+    - WeaponItems
+    - Items
+    - Shotgun
+    - Rifle
+    - Pistol
+    - Sniper
+    - Consumable
+    - ConsumableItems
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 8926100ece96cf04199f95eb53c7a5cc, type: 2}

@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class ParticleLifeTime : MonoBehaviour
 {
-    private ParticleSystem particleSystem;
+    private ParticleSystem particle;
     private ObjectPoolingManager poolManager;
 
     private void Awake()
     {
-        particleSystem = GetComponent<ParticleSystem>();
+        particle = GetComponentInChildren<ParticleSystem>();
         poolManager = FindFirstObjectByType<ObjectPoolingManager>();
     }
 
@@ -21,7 +21,7 @@ public class ParticleLifeTime : MonoBehaviour
 
     private IEnumerator ParticleLife()
     {
-        while (!particleSystem.isStopped)
+        while (!particle.isStopped)
         {
             yield return null;
         }

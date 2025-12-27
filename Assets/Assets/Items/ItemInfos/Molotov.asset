@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f75126b266408489063f8d370c2f54, type: 3}
+  m_Name: Molotov
+  m_EditorClassIdentifier: 
+  <itemType>k__BackingField: 1
+  <itemImage>k__BackingField: {fileID: 21300000, guid: 5fc3f6e96e429ef469ada2e7e16a01a4,
+    type: 3}
+  <itemName>k__BackingField: Molotov
+  <itemDescription>k__BackingField: "\uB9C8\uC6B0\uC2A4 \uBC29\uD5A5\uC73C\uB85C
+    \uD22C\uCC99\uD558\uC5EC \uC77C\uC815 \uC9C0\uC5ED\uC744 \uBD88 \uD0DC\uC6C1\uB2C8\uB2E4."
+  <itemAssetRef>k__BackingField:
+    m_AssetGUID: 3a18bdb18ab4e1647afa810240f335cd
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
